@@ -2,8 +2,32 @@
     max-width: 100%;
 }
 
+/* O problema de usar um div vazio é que ele não tem altura. Aí a imagem de background */
+/* não aparece. Tem um truque que vc pode usar, que é definir o padding com base no */
+/* percentual. Define a largura em 100%, aí ele ocupa a largura inteira do div pai */
+/* Aí você define o padding-top com o percentual de altura que você quer em relação à largura */
+/* Só funciona porque o CSS primeiro calcula a largura, depois ele aplica o padding */
+
 .banner__image {
-    height: 270px;
-    max-width: 100%;
-    object-fit: cover;
+    background-image: url("images/home-banner-mobile.png");  /* 360x270 */
+    background-size: cover;
+    padding-top: 75%; /* O truque está aqui. Vc calcula a relação altura/largura da imagem, neste caso é 0,75 */
+    width: 100%;
+}
+
+/* Coloquei os breakpoints no tamanho máximo da imagem da tela anterior */
+/* Mas você pode ajustar. Só que aí ele vai acabar fazendo um upscaling */
+/* e pode ficar pixelado. O certo era ter imagens com uma resolução melhor */
+@media screen and (min-width: 360px) { 
+    .banner__image {
+        background-image: url("images/home-banner-tablet.png");  /* 768x384 */
+        padding-top: 50%; /* O truque está aqui. Vc calcula a relação altura/largura da imagem, neste caso é 0,5 */
+    }    
+}
+
+@media screen and (min-width: 768px) { 
+    .banner__image {
+        background-image: url("images/home-banner.png");  /* 1440x407 */
+        padding-top: 28.2634%; /* O truque está aqui. Vc calcula a relação altura/largura da imagem, neste caso é 0,282634 */        
+    }    
 }
