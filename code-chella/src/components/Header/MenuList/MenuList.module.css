@@ -1,0 +1,58 @@
+.navbar {
+    display: block;
+    width: 193px;
+    position: absolute;
+    top: 10%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    background: #2e7ba2;
+    height: 243px;
+    padding: 1.5rem;
+    animation: rollUp 0.3s ease-in-out;
+}
+
+.navbar__item {
+    font-family: var(--text);
+    font-size: 1.25rem;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid white;
+    font-weight: 700;
+    width: auto;
+}
+
+.navbar__item:hover {
+    background: #1e5068;
+}
+
+.navbar__item:last-child {
+    border: none;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: block;
+    }
+
+    .navbar__list {
+        display: flex;
+    }
+
+    .navbar__item {
+        font-size: 1.25rem;
+        color: white;
+        font-weight: 700;
+        font-family: var(--text);
+        margin: 1rem;
+    }
+}
+
+@keyframes rollUp {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 243px;
+    }
+}

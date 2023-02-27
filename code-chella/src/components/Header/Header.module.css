@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    background-color: #2e7ba2;
+    justify-content: space-around;
+    align-items: center;
+    height: 128px;
+}
+
+.header__menu {
+    display: block;
+}
+
+.header__menu--active {
+    opacity: 0.6;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 2rem 3.75rem;
+        justify-content: space-between;
+    }
+
+    .header__menu {
+        display: none;
+    }
+}
