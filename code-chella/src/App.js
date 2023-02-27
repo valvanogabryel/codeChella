@@ -1,8 +1,8 @@
+import AppRoutes from './routes.js';
+
 const App = () => {
   return (
-    <div>
-      codeChella
-    </div>
+    <AppRoutes />
   );
 }
 
