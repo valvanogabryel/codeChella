@@ -7,7 +7,7 @@ const InformationsSection = ({ title, children, hasButton }) => {
   return (
     <section className={styles.informations__container}>
       <div className={styles.informations__image}>
-        <img src={showImage} alt="Pessoas assistindo um show" />
+        <img src={showImage} alt="Pessoas assistindo um show" className={styles.image} />
       </div>
       <div className={styles.informations__info}>
         <h6 className={styles.informations__title}>{title}</h6>

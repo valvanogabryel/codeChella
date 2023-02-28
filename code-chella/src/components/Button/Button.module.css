@@ -10,13 +10,20 @@
     background: #2e7ba2;
     padding: 8px 16px;
     height: 56px;
-    width: 86%;
+    width: 100%;
     border-radius: 16px;
     box-shadow: 4px 4px 0px #444444;
     transition: 0.3s ease;
     cursor: pointer;
+    margin: auto;
 }
 
 .button:hover {
     background: #519ec5;
+}
+
+@media screen and (min-width: 768px) {
+    .button {
+        width: auto;
+    }
 }
