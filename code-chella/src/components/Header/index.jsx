@@ -7,7 +7,6 @@ import {
 import styles from './Header.module.css';
 import MenuList from './MenuList';
 import classNames from 'classnames';
-import Banner from 'components/Banner';
 
 
 const Header = () => {
@@ -42,6 +41,10 @@ const Header = () => {
             })}
           />
       }
+      <div className={styles.menu__wrapper}>
+        <MenuList />
+      </div>
+
     </header>
   );
 }

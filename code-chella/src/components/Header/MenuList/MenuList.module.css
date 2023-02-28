@@ -1,3 +1,7 @@
+body {
+    position: absolute;
+}
+
 .navbar {
     display: block;
     width: 193px;
@@ -32,20 +36,45 @@
 @media screen and (min-width: 768px) {
     .navbar {
         display: block;
+        position: initial;
+        height: 1rem;
+        width: auto;
+        animation: none;
     }
-
     .navbar__list {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100vw;
+        top: -0.8rem;
+        gap: 1rem;
     }
 
     .navbar__item {
-        font-size: 1.25rem;
-        color: white;
-        font-weight: 700;
         font-family: var(--text);
         margin: 1rem;
+        border: none;
     }
 }
+
+/* @media screen and (min-width: 800px) {
+    .navbar__list {
+        right: 4.5rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .navbar__list {
+        right: 7rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .navbar__list {
+        right: 10rem;
+    }
+} */
 
 @keyframes rollUp {
     from {

@@ -1,0 +1,11 @@
+.shows__container {
+    margin: auto;
+    text-align: center;
+}
+
+.shows__title {
+    font-family: var(--typography);
+    font-size: 48px;
+    color: #444;
+    margin: 2rem auto;
+}
