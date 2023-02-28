@@ -1,0 +1,29 @@
+.informations__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 2rem;
+}
+
+.informations__image {
+    width: 312px;
+    height: 381px;
+}
+
+.informations__title {
+    font-family: var(--text);
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    color: #444;
+    line-height: 38px;
+}
+
+.informations__text {
+    font-family: var(--text);
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+}

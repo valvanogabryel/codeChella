@@ -5,16 +5,18 @@ import styles from './InformationsSection.module.css';
 
 const InformationsSection = ({ title, children, hasButton }) => {
   return (
-    <section>
-      <div>
+    <section className={styles.informations__container}>
+      <div className={styles.informations__image}>
         <img src={showImage} alt="Pessoas assistindo um show" />
       </div>
-      <div>
-        <h6>{title}</h6>
-        {children}
+      <div className={styles.informations__info}>
+        <h6 className={styles.informations__title}>{title}</h6>
+        <p className={styles.informations__text}>
+          {children}
+        </p>
         {
           hasButton ?
-            <div>
+            <div className={styles.informations__button}>
               <Button>Comprar ingresso!</Button>
             </div>
             :

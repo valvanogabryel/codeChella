@@ -3,10 +3,17 @@
   --text: "Raleway", sans-serif;
 }
 
+html,
+body {
+  overflow-x: hidden;
+  position: absolute;
+}
+
 body {
   margin: 0;
   font-family: var(--text);
-  box-sizing: border-box;
   padding: 0;
-  margin: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
