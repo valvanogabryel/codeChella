@@ -1,15 +1,29 @@
+import classNames from 'classnames';
 import styles from './DayShow.module.css';
 
-const DayShow = () => {
+
+const DayShow = ({ dayShows }) => {
+    const date = dayShows[0].date;
+
     return (
-        <>
-            <div>
-                <h1>show 1 SABADO</h1>
-            </div>
-            <div>
-                <h1>show 2 DOMINGO</h1>
-            </div>
-        </>
+        <div className={styles.show__container}>
+            <h1 className={styles.show__date}>{date}</h1>
+            <ul className={styles.show__list}>
+                {
+                    dayShows.map(show => (
+                        <li
+                            key={show.id}
+                            className={classNames({
+                                [styles.show__band]: true,
+                                [styles[`show__band--${show.id}`]]: true
+                            })}
+                        >
+                            {show.band}
+                        </li>
+                    ))
+                }
+            </ul>
+        </div>
     );
 }
 

@@ -3,6 +3,8 @@ import Header from "components/Header";
 import InformationsSection from "components/InformationsSection";
 import styles from './Home.module.css';
 import Shows from "./Shows";
+import image from 'assets/images/imagem.png';
+import Footer from "components/Footer";
 
 const Home = () => {
   return (
@@ -17,7 +19,11 @@ const Home = () => {
           Hora de programar nossa memória com novas lembranças! Uma nova experiência sobre música, linguagens e, claro, tecnologia! Somos um festival diverso, com vários artistas e referências. Divirta-se!
         </InformationsSection>
         <Shows />
+        <div>
+          <img src={image} alt="Pessoas comemorando" />
+        </div>
       </main>
+      <Footer />
     </>
   );
 }
