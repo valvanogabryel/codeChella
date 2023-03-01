@@ -31,12 +31,44 @@
     margin: 1.5rem auto;
 }
 
+.informations__image--experience-1 {
+    background-image: url("../../assets/images/experience/image1-mobile.png");
+    background-size: cover;
+}
+
+.informations__image--experience-2 {
+    background-image: url("../../assets/images/experience/image2-mobile.png");
+    background-size: cover;
+}
+
+.informations__image--experience-3 {
+    background-image: url("../../assets/images/experience/image3-mobile.png");
+    background-size: cover;
+}
+
 @media screen and (min-width: 768px) {
     .informations__image {
-        background-image: url("../../assets/images/programodromo-tablet.png");
-        background-size: cover;
         height: 381px;
         width: 609px;
+    }
+    .informations__image--home {
+        background-image: url("../../assets/images/programodromo-tablet.png");
+        background-size: cover;
+    }
+
+    .informations__image--experience-1 {
+        background-image: url("../../assets/images/experience/image1-tablet.png");
+        background-size: cover;
+    }
+
+    .informations__image--experience-2 {
+        background-image: url("../../assets/images/experience/image2-tablet.png");
+        background-size: cover;
+    }
+
+    .informations__image--experience-3 {
+        background-image: url("../../assets/images/experience/image3-tablet.png");
+        background-size: cover;
     }
 
     .image {
@@ -56,6 +88,10 @@
 @media screen and (min-width: 1440px) {
     .informations__container {
         flex-direction: row;
+    }
+
+    .informations__container:nth-child(2) {
+        flex-direction: row-reverse;
     }
 
     .informations__image {
