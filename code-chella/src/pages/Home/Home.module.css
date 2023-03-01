@@ -5,3 +5,12 @@
     margin-right: auto;
     margin-left: auto;
 }
+
+.image {
+    background-image: url("images/imagem.png");
+    background-size: cover;
+    width: 100%;
+    padding-top: 94%;
+    transform: scale(1.1);
+    margin: 2rem auto 0 auto;
+}

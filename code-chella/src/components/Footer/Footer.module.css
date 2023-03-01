@@ -1,3 +1,8 @@
 .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     background: #facf9d;
+    padding: 2.5rem;
 }
