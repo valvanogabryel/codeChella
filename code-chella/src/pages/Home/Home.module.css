@@ -7,10 +7,26 @@
 }
 
 .image {
-    background-image: url("images/imagem.png");
+    background-image: url("images/imagem-mobile.png");
     background-size: cover;
     width: 100%;
     padding-top: 94%;
     transform: scale(1.1);
     margin: 2rem auto 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .image {
+        background-image: url("images/imagem-tablet.png");
+        padding-top: 44%;
+        transform: scale(1.04);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .image {
+        background-image: url("images/imagem-desktop.png");
+        padding-top: 23.47%;
+        transform: scale(1.03);
+    }
 }

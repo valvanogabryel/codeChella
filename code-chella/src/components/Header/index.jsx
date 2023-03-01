@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <Logo />
+      <Logo className={styles.header__logo} />
       {
         isActive ?
           <>

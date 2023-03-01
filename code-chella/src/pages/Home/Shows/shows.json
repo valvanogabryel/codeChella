@@ -4,67 +4,80 @@
       {
         "band": "System of a DOM",
         "date": "SÁBADO <11/03>",
-        "id": 1
+        "id": 1,
+        "class": "sodom"
       },
       {
         "band": "Python Maiden",
         "date": "SÁBADO <11/03>",
-        "id": 2
+        "id": 2,
+        "class": "python-maiden"
       },
       {
         "band": "Apollo Client 2001",
         "date": "SÁBADO <11/03>",
-        "id": 3
+        "id": 3,
+        "class": "apollo"
       },
       {
         "band": "Bon Java",
         "date": "SÁBADO <11/03>",
-        "id": 4
+        "id": 4,
+        "class": "bon-java"
       },
       {
         "band": "NickCallback",
         "date": "SÁBADO <11/03>",
-        "id": 5
+        "id": 5,
+        "class": "nickcallback"
       },
       {
         "band": "Linkin Promises",
         "date": "SÁBADO <11/03>",
-        "id": 6
+        "id": 6,
+        "class": "linkin-promises"
       },
       {
         "band": "Fullstack Fighters",
         "date": "SÁBADO <11/03>",
-        "id": 7
+        "id": 7,
+        "class": "fullstack-fighters"
       },
       {
         "band": "Papa React",
         "date": "SÁBADO <11/03>",
-        "id": 8
+        "id": 8,
+        "class": "papa-react"
       },
       {
         "band": "Angular in Chains",
         "date": "SÁBADO <11/03>",
-        "id": 9
+        "id": 9,
+        "class": "angular-in-chains"
       },
       {
         "band": "Agnostic Front-end",
         "date": "SÁBADO <11/03>",
-        "id": 10
+        "id": 10,
+        "class": "agnostic-front-end"
       },
       {
         "band": "SlipkNode",
         "date": "SÁBADO <11/03>",
-        "id": 11
+        "id": 11,
+        "class": "slipknode"
       },
       {
         "band": "Pink Flutter",
         "date": "SÁBADO <11/03>",
-        "id": 12
+        "id": 12,
+        "class": "pink-flutter"
       },
       {
         "band": "Kiss",
         "date": "SÁBADO <11/03>",
-        "id": 13
+        "id": 13,
+        "class": "kiss"
       }
     ]
   },

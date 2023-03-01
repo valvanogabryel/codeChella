@@ -7,7 +7,9 @@ const DayShow = ({ dayShows }) => {
 
     return (
         <div className={styles.show__container}>
-            <h1 className={styles.show__date}>{date}</h1>
+            <div className={styles.lines}>
+                <h1 className={styles.show__date}>{date}</h1>
+            </div>
             <ul className={styles.show__list}>
                 {
                     dayShows.map(show => (
@@ -15,7 +17,8 @@ const DayShow = ({ dayShows }) => {
                             key={show.id}
                             className={classNames({
                                 [styles.show__band]: true,
-                                [styles[`show__band--${show.id}`]]: true
+                                [styles[`show__band--${show.id}`]]: true,
+                                [styles[`${show.class}`]]: true
                             })}
                         >
                             {show.band}

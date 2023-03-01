@@ -1,9 +1,13 @@
+import classNames from 'classnames';
 import styles from './Banner.module.css';
 
-const Banner = () => {
+const Banner = ({ page }) => {
+    console.log(page);
     return (
         <section className={styles.banner__container}>
-            <div className={styles.banner__image}></div>
+            <div className={classNames({
+                [styles[`banner__image--${page}`]]: true
+            })}></div>
         </section>
     );
 }

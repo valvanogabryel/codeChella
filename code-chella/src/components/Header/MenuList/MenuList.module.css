@@ -12,17 +12,26 @@ body {
     color: white;
     background: #2e7ba2;
     height: 243px;
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
     animation: rollUp 0.3s ease-in-out;
+    user-select: none;
 }
 
 .navbar__item {
     font-family: var(--text);
     font-size: 1.25rem;
-    padding: 1.2rem 0;
     border-bottom: 1px solid white;
     font-weight: 700;
     width: auto;
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 0;
+}
+
+.navbar__item a {
+    display: block;
+    padding: 1em;
+    width: 84%;
 }
 
 .navbar__item:hover {
@@ -40,6 +49,7 @@ body {
         height: 1rem;
         width: auto;
         animation: none;
+        padding: 1.5rem;
     }
     .navbar__list {
         display: flex;
@@ -48,33 +58,41 @@ body {
         position: relative;
         width: 100vw;
         top: -0.8rem;
-        gap: 1rem;
+        right: 1rem;
     }
 
     .navbar__item {
         font-family: var(--text);
-        margin: 1rem;
+        margin: 0.5rem;
         border: none;
+        padding: 0;
+    }
+
+    .navbar__item:hover {
+        text-decoration: underline;
+        background: none;
+    }
+
+    .navbar__item a {
+        width: 100%;
     }
 }
 
-/* @media screen and (min-width: 800px) {
+@media screen and (min-width: 1440px) {
+    .navbar {
+        display: flex;
+    }
+
     .navbar__list {
-        right: 4.5rem;
+        width: 83vw;
+        justify-content: flex-end;
+        position: initial;
+    }
+
+    .navbar__item {
+        margin: 0;
     }
 }
-
-@media screen and (min-width: 900px) {
-    .navbar__list {
-        right: 7rem;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    .navbar__list {
-        right: 10rem;
-    }
-} */
 
 @keyframes rollUp {
     from {

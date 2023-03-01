@@ -1,15 +1,12 @@
 import Banner from "components/Banner";
-import Header from "components/Header";
 import InformationsSection from "components/InformationsSection";
 import styles from './Home.module.css';
 import Shows from "./Shows";
-import Footer from "components/Footer";
 
 const Home = () => {
   return (
     <>
-      <Header />
-      <Banner />
+      <Banner page='home' />
       <main className={styles.container}>
         <InformationsSection
           title='< 11 e 12 de Março > Programódromo de São Paulo'
@@ -22,7 +19,6 @@ const Home = () => {
           {/* image */}
         </div>
       </main>
-      <Footer />
     </>
   );
 }
