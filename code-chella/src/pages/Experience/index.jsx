@@ -5,11 +5,13 @@ import image1 from 'assets/images/experience/image1.png';
 import image2 from 'assets/images/experience/image2.png';
 import image3 from 'assets/images/experience/image3.png';
 
+import styles from './Experience.module.css';
+
 const Experience = () => {
   return (
     <>
       <Banner page='experience' />
-      <main>
+      <main className={styles.container}>
         <InformationsSection
           title='Acessibilidade e Inclusão'
           page='experience'
