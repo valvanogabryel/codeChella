@@ -3,14 +3,14 @@
 }
 
 .banner__image--home {
-    background-image: url("images/home-banner-mobile.png");
+    background-image: url("images/home/home-banner-mobile.png");
     background-size: cover;
     width: 100%;
     padding-top: 75%;
 }
 
 .banner__image--experience {
-    background-image: url("images/experience-banner-mobile.png");
+    background-image: url("images/experience/experience-banner-mobile.png");
     background-size: cover;
     width: 100%;
     padding-top: 75%;
@@ -18,24 +18,24 @@
 
 @media screen and (min-width: 768px) {
     .banner__image--home {
-        background-image: url("images/home-banner-tablet.png");
+        background-image: url("images/home/home-banner-tablet.png");
         padding-top: 50%;
     }
 
     .banner__image--experience {
-        background-image: url("images/experience-banner-tablet.png");
+        background-image: url("images/experience/experience-banner-tablet.png");
         padding-top: 50%;
     }
 }
 
 @media screen and (min-width: 1440px) {
     .banner__image--home {
-        background-image: url("images/home-banner.png");
+        background-image: url("images/home/home-banner.png");
         padding-top: 28.2634%;
     }
 
     .banner__image--experience {
-        background-image: url("images/experience-banner.png");
+        background-image: url("images/experience/experience-banner.png");
         padding-top: 28.2634%;
     }
 }
