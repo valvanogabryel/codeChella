@@ -1,8 +1,6 @@
 import Banner from "components/Banner";
 import InformationsSection from "components/InformationsSection";
 
-
-
 import styles from './Experience.module.css';
 
 const Experience = () => {

@@ -2,9 +2,6 @@ import classNames from "classnames";
 import Button from "components/Button";
 import styles from './InformationsSection.module.css';
 
-// images
-// import homeImage from 'assets/images/programodromo.png'; // Home page
-
 const InformationsSection = ({ title, children, hasButton, page, id }) => {
   return (
     <section className={styles.informations__container}>

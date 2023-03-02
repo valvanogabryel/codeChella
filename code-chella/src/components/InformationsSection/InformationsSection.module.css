@@ -13,11 +13,6 @@
     width: 312px;
 }
 
-.informations__image--home {
-    background-image: url("../../assets/images/programodromo.png");
-    background-size: cover;
-}
-
 .informations__title {
     font-family: var(--text);
     font-weight: 700;
@@ -36,6 +31,11 @@
     margin: 1.5rem auto;
 }
 
+.informations__image--home {
+    background-image: url("../../assets/images/programodromo.png");
+    background-size: cover;
+}
+
 .informations__image--experience-1 {
     background-image: url("../../assets/images/experience/image1-mobile.png");
     background-size: cover;
@@ -48,6 +48,21 @@
 
 .informations__image--experience-3 {
     background-image: url("../../assets/images/experience/image3-mobile.png");
+    background-size: cover;
+}
+
+.informations__image--sectors-1 {
+    background-image: url("../../assets/images/sectors/image1-mobile.png");
+    background-size: cover;
+}
+
+.informations__image--sectors-2 {
+    background-image: url("../../assets/images/sectors/image2-mobile.png");
+    background-size: cover;
+}
+
+.informations__image--sectors-3 {
+    background-image: url("../../assets/images/sectors/image3-mobile.png");
     background-size: cover;
 }
 
@@ -73,6 +88,21 @@
 
     .informations__image--experience-3 {
         background-image: url("../../assets/images/experience/image3-tablet.png");
+        background-size: cover;
+    }
+
+    .informations__image--sectors-1 {
+        background-image: url("../../assets/images/sectors/image1-tablet.png");
+        background-size: cover;
+    }
+
+    .informations__image--sectors-2 {
+        background-image: url("../../assets/images/sectors/image2-tablet.png");
+        background-size: cover;
+    }
+
+    .informations__image--sectors-3 {
+        background-image: url("../../assets/images/sectors/image3-tablet.png");
         background-size: cover;
     }
 

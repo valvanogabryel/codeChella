@@ -19,7 +19,8 @@
     color: #444;
     font-size: 20px;
     display: inline-block;
-    width: 10%;
+    width: 100%;
+    margin-top: 2rem;
 }
 
 .sectors__list {
@@ -45,3 +46,16 @@
     height: 32px;
     width: 32px;
 }
+
+.sectors__details {
+    font-family: var(--text);
+    font-weight: 700;
+    font-size: 32px;
+    color: #444;
+    text-align: center;
+    margin: 1.5rem auto;
+}
+/* 
+.sectors__informations {
+
+} */

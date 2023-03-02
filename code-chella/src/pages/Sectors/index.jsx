@@ -1,5 +1,5 @@
 import Banner from "components/Banner";
-import { Fragment } from "react";
+import InformationsSection from "components/InformationsSection";
 import styles from './Sectors.module.css';
 
 const Sectors = () => {
@@ -34,32 +34,59 @@ const Sectors = () => {
   return (
     <>
       <Banner page='sectors' />
-      <section className={styles.sectors__container}>
-        <div className={styles.sectors__image}>
-          {/* image */}
-        </div>
-        <div className={styles.sectors__wrapper}>
-          <h6 className={styles.sectors__subtitle}>Legenda:</h6>
-          <ul className={styles.sectors__list}>
-            {
-              sectors.map(sector => (
-                <div
-                  key={sector.id}
-                  className={styles.sector__item}
-                >
-                  <span
-                    style={{ background: sector.color }}
-                    className={styles.sector__box}
-                  ></span>
-                  <li>
-                    {sector.name}
-                  </li>
-                </div>
-              ))
-            }
-          </ul>
-        </div>
-      </section>
+      <main className={styles.sectors__container}>
+        <section >
+          <div className={styles.sectors__image}>
+            {/* image */}
+          </div>
+          <div className={styles.sectors__wrapper}>
+            <p className={styles.sectors__subtitle}>Legenda:</p>
+            <ul className={styles.sectors__list}>
+              {
+                sectors.map(sector => (
+                  <div
+                    key={sector.id}
+                    className={styles.sector__item}
+                  >
+                    <span
+                      style={{ background: sector.color }}
+                      className={styles.sector__box}
+                    ></span>
+                    <li>
+                      {sector.name}
+                    </li>
+                  </div>
+                ))
+              }
+            </ul>
+          </div>
+        </section>
+        <section className={styles.sectors__informations}>
+          <h6 className={styles.sectors__details}>Mais detalhes sobre os setores:</h6>
+          <InformationsSection
+            title='Pista'
+            page='sectors'
+            id={1}
+          >
+            Pista convencional, atendida pelos bares e banheiros das laterais do estádio. Espaço amplo, com local para sentar e descansar. Separada da pista premium por uma grade.
+          </InformationsSection>
+          <InformationsSection
+            title='Pista Premium'
+            page='sectors'
+            id={2}
+          >
+            Pista mais próxima do palco, com acesso muito próximo a banheiros e bares num raio de 100m. Todas as pessoas idosas e/ou com deficiência têm direito a acesso gratuito a essa área.
+          </InformationsSection>
+          <InformationsSection
+            title='Cadeiras'
+            page='sectors'
+            id={3}
+          >
+            Opção de cadeiras térreas ou elevadas. Acesso próximo a banheiros e bares, visão um pouco elevada em relação às pistas.
+          </InformationsSection>
+
+        </section>
+      </main>
     </>
   );
 }
