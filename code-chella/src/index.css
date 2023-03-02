@@ -3,6 +3,12 @@
   --text: "Raleway", sans-serif;
 }
 
+/*! check 
+*  
+{
+  outline: 1px solid red;
+ } */
+
 html,
 body {
   overflow-x: hidden !important;
