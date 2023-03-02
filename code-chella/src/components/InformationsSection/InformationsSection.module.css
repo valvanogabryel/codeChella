@@ -13,6 +13,11 @@
     width: 312px;
 }
 
+.informations__image--sectors {
+    width: 312px;
+    height: 239px;
+}
+
 .informations__title {
     font-family: var(--text);
     font-weight: 700;
