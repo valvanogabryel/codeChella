@@ -4,7 +4,10 @@ import styles from './InformationsSection.module.css';
 
 const InformationsSection = ({ title, children, hasButton, page, id }) => {
   return (
-    <section className={styles.informations__container}>
+    <section className={classNames({
+      [styles.informations__container]: true,
+      [styles['informations__container--sectors']]: page === 'sectors'
+    })}>
 
       <div className={classNames({
         [styles.informations__image]: true,

@@ -91,4 +91,14 @@
         margin-left: 11%;
         padding: 1rem 0;
     }
+
+    .sectors__details {
+        margin: 0;
+    }
+
+    .sectors__informations {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-bottom: 5rem;
+    }
 }

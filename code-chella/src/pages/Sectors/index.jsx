@@ -61,29 +61,32 @@ const Sectors = () => {
             </ul>
           </div>
         </section>
-        <section className={styles.sectors__informations}>
+        <section>
           <h6 className={styles.sectors__details}>Mais detalhes sobre os setores:</h6>
-          <InformationsSection
-            title='Pista'
-            page='sectors'
-            id={1}
-          >
-            Pista convencional, atendida pelos bares e banheiros das laterais do estádio. Espaço amplo, com local para sentar e descansar. Separada da pista premium por uma grade.
-          </InformationsSection>
-          <InformationsSection
-            title='Pista Premium'
-            page='sectors'
-            id={2}
-          >
-            Pista mais próxima do palco, com acesso muito próximo a banheiros e bares num raio de 100m. Todas as pessoas idosas e/ou com deficiência têm direito a acesso gratuito a essa área.
-          </InformationsSection>
-          <InformationsSection
-            title='Cadeiras'
-            page='sectors'
-            id={3}
-          >
-            Opção de cadeiras térreas ou elevadas. Acesso próximo a banheiros e bares, visão um pouco elevada em relação às pistas.
-          </InformationsSection>
+
+          <div className={styles.sectors__informations}>
+            <InformationsSection
+              title='Pista'
+              page='sectors'
+              id={1}
+            >
+              Pista convencional, atendida pelos bares e banheiros das laterais do estádio. Espaço amplo, com local para sentar e descansar. Separada da pista premium por uma grade.
+            </InformationsSection>
+            <InformationsSection
+              title='Pista Premium'
+              page='sectors'
+              id={2}
+            >
+              Pista mais próxima do palco, com acesso muito próximo a banheiros e bares num raio de 100m. Todas as pessoas idosas e/ou com deficiência têm direito a acesso gratuito a essa área.
+            </InformationsSection>
+            <InformationsSection
+              title='Cadeiras'
+              page='sectors'
+              id={3}
+            >
+              Opção de cadeiras térreas ou elevadas. Acesso próximo a banheiros e bares, visão um pouco elevada em relação às pistas.
+            </InformationsSection>
+          </div>
 
         </section>
       </main>
