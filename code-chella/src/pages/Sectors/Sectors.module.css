@@ -1,0 +1,47 @@
+.sectors__container {
+    background: linear-gradient(180deg, #bfdae6 0%, #fcf0dd 50%, #facf9d 100%);
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sectors__image {
+    background-image: url("images/sectors-banner-mobile.png");
+    background-size: cover;
+    width: 100%;
+    padding-top: 88.4%;
+}
+
+.sectors__subtitle {
+    font-family: var(--text);
+    font-weight: 700;
+    color: #444;
+    font-size: 20px;
+    display: inline-block;
+    width: 10%;
+}
+
+.sectors__list {
+    margin-top: 2rem;
+}
+
+.sector__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.sector__item li {
+    font-family: var(--text);
+    font-size: 20px;
+    font-weight: 500;
+    color: #444;
+}
+
+.sector__box {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+}
