@@ -11,10 +11,26 @@ import styles from './Footer.module.css';
 
 const Footer = () => {
   const socialMedias = [
-    BsWhatsapp,
-    BsTwitch,
-    BsInstagram,
-    BsTwitter
+    {
+      media: BsWhatsapp,
+      path: 'https://web.whatsapp.com/',
+      id: 1
+    },
+    {
+      media: BsTwitch,
+      path: 'https://www.twitch.tv/',
+      id: 2
+    },
+    {
+      media: BsInstagram,
+      path: 'https://www.instagram.com/',
+      id: 3
+    },
+    {
+      media: BsTwitter,
+      path: 'https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D',
+      id: 4
+    }
   ];
 
   return (
@@ -29,15 +45,17 @@ const Footer = () => {
         <div className={styles.medias__container}>
           <p className={styles.medias__text}>Acesse nossas redes:</p>
           <ul className={styles.medias__list}>
-            {socialMedias.map((Media, index) => (
+            {socialMedias.map((media) => (
               <li
-                key={index}
+                key={media.id}
                 className={styles.medias}
               >
-                <Link>
-                  <Media
+                <Link
+                  to={media.path}
+                  target='_blank'
+                >
+                  <media.media
                     size={32}
-                  // color='#444'
                   />
                 </Link>
               </li>

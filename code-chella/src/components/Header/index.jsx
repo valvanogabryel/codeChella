@@ -7,15 +7,18 @@ import {
 import styles from './Header.module.css';
 import MenuList from './MenuList';
 import classNames from 'classnames';
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
   const [isActive, setMode] = useState(false);
 
-
   return (
     <header className={styles.header}>
-      <Logo className={styles.header__logo} />
+      <Link to='/' style={{ display: 'contents' }}>
+        <Logo className={styles.header__logo} to='/' />
+
+      </Link>
       {
         isActive ?
           <>

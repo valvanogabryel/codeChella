@@ -9,15 +9,15 @@ const MenuList = () => {
         },
         {
             name: 'Mapa de Setores',
-            path: '/'
+            path: '/sectors'
         },
         {
             name: 'Informações',
-            path: '/'
+            path: '/info'
         },
         {
             name: 'Ingresso',
-            path: '/'
+            path: '/ticket'
         }
     ];
 
