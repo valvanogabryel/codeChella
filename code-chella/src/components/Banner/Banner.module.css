@@ -16,6 +16,13 @@
     padding-top: 75%;
 }
 
+.banner__image--sectors {
+    background-image: url("images/sectors/sectors-banner-mobile.png");
+    background-size: cover;
+    width: 100%;
+    padding-top: 75%;
+}
+
 @media screen and (min-width: 768px) {
     .banner__image--home {
         background-image: url("images/home/home-banner-tablet.png");
