@@ -21,6 +21,7 @@
     display: inline-block;
     width: 100%;
     margin-top: 2rem;
+    padding-left: 1rem;
 }
 
 .sectors__list {
@@ -77,13 +78,17 @@
     }
 
     .sectors__subtitle {
-        font-size: 40px;
+        font-size: 32px;
     }
 }
 
 @media screen and (min-width: 1440px) {
     .sectors__section {
         flex-direction: row;
-        justify-self: center;
+        justify-content: center;
+        gap: 4rem;
+        width: 70%;
+        margin-left: 11%;
+        padding: 1rem 0;
     }
 }
