@@ -7,7 +7,7 @@
 }
 
 .sectors__image {
-    background-image: url("images/sectors-banner-mobile.png");
+    background-image: url("images/sectors-image-mobile.png");
     background-size: cover;
     width: 100%;
     padding-top: 88.4%;
@@ -66,6 +66,14 @@
         flex-direction: column;
         align-items: center;
         margin-bottom: 4rem;
+    }
+
+    .sectors__image {
+        background-image: url("images/sectors-image.png");
+        background-size: cover;
+        width: 690px;
+        height: 609px;
+        padding: 0;
     }
 
     .sectors__subtitle {
