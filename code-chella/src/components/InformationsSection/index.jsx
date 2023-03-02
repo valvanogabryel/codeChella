@@ -18,8 +18,16 @@ const InformationsSection = ({ title, children, hasButton, page, id }) => {
       </div>
 
       <div className={styles.informations__info}>
-        <h6 className={styles.informations__title}>{title}</h6>
-        <p className={styles.informations__text}>
+        <h6 className={classNames({
+          [styles.informations__title]: true,
+          [styles['informations__title--experience']]: page === 'experience'
+
+        })}>{title}</h6>
+        <p className={classNames({
+          [styles.informations__text]: true,
+          [styles['informations__title--experience']]: page === 'experience'
+
+        })}>
           {children}
         </p>
         {
