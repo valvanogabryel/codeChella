@@ -33,6 +33,11 @@
         background-image: url("images/experience/experience-banner-tablet.png");
         padding-top: 50%;
     }
+
+    .banner__image--sectors {
+        background-image: url("images/sectors/sectors-banner-tablet.png");
+        padding-top: 50%;
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -43,6 +48,11 @@
 
     .banner__image--experience {
         background-image: url("images/experience/experience-banner.png");
+        padding-top: 28.2634%;
+    }
+
+    .banner__image--sectors {
+        background-image: url("images/sectors/sectors-banner.png");
         padding-top: 28.2634%;
     }
 }
