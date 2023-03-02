@@ -69,14 +69,21 @@
     }
 
     .sectors__image {
-        background-image: url("images/sectors-image.png");
+        background-image: url("images/sectors-image-tablet.png");
         background-size: cover;
-        width: 690px;
+        width: 648px;
         height: 609px;
         padding: 0;
     }
 
     .sectors__subtitle {
         font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .sectors__section {
+        flex-direction: row;
+        justify-self: center;
     }
 }
