@@ -13,6 +13,11 @@
     width: 312px;
 }
 
+.informations__image--home {
+    background-image: url("../../assets/images/programodromo.png");
+    background-size: cover;
+}
+
 .informations__title {
     font-family: var(--text);
     font-weight: 700;
