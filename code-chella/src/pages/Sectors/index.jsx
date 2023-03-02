@@ -35,7 +35,7 @@ const Sectors = () => {
     <>
       <Banner page='sectors' />
       <main className={styles.sectors__container}>
-        <section >
+        <section className={styles.sectors__section}>
           <div className={styles.sectors__image}>
             {/* image */}
           </div>
@@ -51,7 +51,7 @@ const Sectors = () => {
                     <span
                       style={{ background: sector.color }}
                       className={styles.sector__box}
-                    ></span>
+                    >{/*square*/}</span>
                     <li>
                       {sector.name}
                     </li>

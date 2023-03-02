@@ -96,6 +96,11 @@
         background-size: cover;
     }
 
+    .informations__image--sectors {
+        width: 382.4px;
+        height: 239px;
+    }
+
     .informations__image--sectors-1 {
         background-image: url("../../assets/images/sectors/image1-tablet.png");
         background-size: cover;

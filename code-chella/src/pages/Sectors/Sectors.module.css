@@ -59,3 +59,16 @@
 .sectors__informations {
 
 } */
+
+@media screen and (min-width: 768px) {
+    .sectors__section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    .sectors__subtitle {
+        font-size: 40px;
+    }
+}
