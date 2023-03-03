@@ -1,4 +1,5 @@
 import { ReactComponent as BlackLogo } from 'assets/images/logo.svg';
+import { JackInTheBox } from 'react-awesome-reveal';
 import {
   BsWhatsapp,
   BsTwitch,
@@ -44,23 +45,26 @@ const Footer = () => {
         </div>
         <div className={styles.medias__container}>
           <p className={styles.medias__text}>Acesse nossas redes:</p>
-          <ul className={styles.medias__list}>
-            {socialMedias.map((media) => (
-              <li
-                key={media.id}
-                className={styles.medias}
-              >
-                <Link
-                  to={media.path}
-                  target='_blank'
+          <JackInTheBox cascade damping={0.1}>
+
+            <ul className={styles.medias__list}>
+              {socialMedias.map((media) => (
+                <li
+                  key={media.id}
+                  className={styles.medias}
                 >
-                  <media.media
-                    size={32}
-                  />
-                </Link>
-              </li>
-            ))}
-          </ul>
+                  <Link
+                    to={media.path}
+                    target='_blank'
+                  >
+                    <media.media
+                      size={32}
+                    />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </JackInTheBox>
         </div>
       </div>
       <div className={styles.disclaimer}>
