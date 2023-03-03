@@ -17,6 +17,10 @@ body {
     user-select: none;
 }
 
+.teste {
+    display: none;
+}
+
 .navbar__item {
     font-family: var(--text);
     font-size: 1.25rem;
