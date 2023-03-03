@@ -1,5 +1,5 @@
 import { ReactComponent as Logo } from 'assets/images/logo.svg';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import {
   HiMenu,
   HiMenuAlt2
@@ -7,8 +7,7 @@ import {
 import styles from './Header.module.css';
 import MenuList from './MenuList';
 import classNames from 'classnames';
-import { Link, useLocation } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isActive, setMode] = useState(false);
