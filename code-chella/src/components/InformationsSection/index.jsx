@@ -1,5 +1,7 @@
 import classNames from "classnames";
 import Button from "components/Button";
+
+
 import styles from './InformationsSection.module.css';
 
 const InformationsSection = ({ title, children, hasButton, page, id }) => {
@@ -8,7 +10,6 @@ const InformationsSection = ({ title, children, hasButton, page, id }) => {
       [styles.informations__container]: true,
       [styles['informations__container--sectors']]: page === 'sectors'
     })}>
-
       <div className={classNames({
         [styles.informations__image]: true,
         [styles[`informations__image--${page}`]]: true,
@@ -17,7 +18,6 @@ const InformationsSection = ({ title, children, hasButton, page, id }) => {
       >
         {/* <img src={homeImage} alt="Pessoas assistindo um show" className={styles.image} /> */}
       </div>
-
       <div className={styles.informations__info}>
         <h6 className={classNames({
           [styles.informations__title]: true,
@@ -33,9 +33,11 @@ const InformationsSection = ({ title, children, hasButton, page, id }) => {
         </p>
         {
           hasButton ?
+
             <div className={styles.informations__button}>
               <Button>Comprar ingresso!</Button>
             </div>
+
             :
             <></>
         }
