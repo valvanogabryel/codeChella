@@ -13,12 +13,14 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   const [isActive, setMode] = useState(false);
 
-  function teste() {
+  function preventScrolling() {
     if (isActive) {
+      document.body.style.overflow = 'scroll';
+    } else {
       document.body.style.overflow = 'hidden';
     }
+    console.log(isActive);
   }
-
 
   return (
     <header className={styles.header}>
@@ -35,7 +37,10 @@ const Header = () => {
             <HiMenuAlt2
               color='white'
               size={32}
-              onClick={() => setMode(!isActive)}
+              onClick={() => {
+                setMode(!isActive);
+                preventScrolling();
+              }}
               className={classNames({
                 [styles.header__menu]: true,
                 [styles['header__menu--active']]: isActive
@@ -47,7 +52,10 @@ const Header = () => {
           <HiMenu
             color='white'
             size={32}
-            onClick={() => { setMode(!isActive); teste() }}
+            onClick={() => {
+              setMode(!isActive);
+              preventScrolling();
+            }}
             className={classNames({
               [styles.header__menu]: true,
               [styles['header__menu--active']]: isActive
