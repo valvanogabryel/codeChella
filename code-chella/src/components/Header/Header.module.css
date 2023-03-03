@@ -46,4 +46,8 @@
     .header__logo {
         position: absolute;
     }
+
+    .scrolled {
+        background-color: rebeccapurple;
+    }
 }

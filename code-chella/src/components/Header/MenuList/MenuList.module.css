@@ -111,6 +111,10 @@ body {
         background-position: 0;
     }
 
+    .link--active {
+        font-size: 1.3rem;
+    }
+
     /* .link {
         transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         box-shadow: inset 0 0 0 0 #54b3d6;

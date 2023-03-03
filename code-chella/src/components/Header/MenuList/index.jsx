@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import { NavLink } from 'react-router-dom';
 import styles from './MenuList.module.css';
 
@@ -32,13 +33,19 @@ const MenuList = () => {
             >
               <NavLink
                 to={item.path}
-                className={styles.link}
+                className={({ isActive }) => (
+                  classNames({
+                    [styles.link]: true,
+                    [styles['link--active']]: isActive
+                  })
+                )
+                }
               >{item.name}</NavLink>
             </li>
           )
         }
       </ul>
-    </nav>
+    </nav >
   );
 }
 
