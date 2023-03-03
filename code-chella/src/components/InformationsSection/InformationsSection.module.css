@@ -59,17 +59,17 @@
 }
 
 .informations__image--sectors-1 {
-    background-image: url("../../assets/images/sectors/image1-mobile.png");
+    background-image: url("../../assets/images/sectors/sectors-image-mobile-1.png");
     background-size: cover;
 }
 
 .informations__image--sectors-2 {
-    background-image: url("../../assets/images/sectors/image2-mobile.png");
+    background-image: url("../../assets/images/sectors/sectors-image-mobile-2.png");
     background-size: cover;
 }
 
 .informations__image--sectors-3 {
-    background-image: url("../../assets/images/sectors/image3-mobile.png");
+    background-image: url("../../assets/images/sectors/sectors-image-mobile-3.png");
     background-size: cover;
 }
 
@@ -104,17 +104,17 @@
     }
 
     .informations__image--sectors-1 {
-        background-image: url("../../assets/images/sectors/image1-tablet.png");
+        background-image: url("../../assets/images/sectors/sectors-image-tablet-1.png");
         background-size: cover;
     }
 
     .informations__image--sectors-2 {
-        background-image: url("../../assets/images/sectors/image2-tablet.png");
+        background-image: url("../../assets/images/sectors/sectors-image-tablet-2.png");
         background-size: cover;
     }
 
     .informations__image--sectors-3 {
-        background-image: url("../../assets/images/sectors/image3-tablet.png");
+        background-image: url("../../assets/images/sectors/sectors-image-tablet-3.png");
         background-size: cover;
     }
 

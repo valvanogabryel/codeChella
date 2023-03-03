@@ -14,9 +14,6 @@ const InformationsSection = ({ title, children, hasButton, page, id }) => {
         [styles[`informations__image--${page}`]]: true,
         [styles[`informations__image--${page}-${id}`]]: true
       })}
-      // style={{
-      //   backgroundImage: `url(../../assets/images/${page}/${page}-image-mobile.png)`
-      // }}
       >
         {/* <img src={homeImage} alt="Pessoas assistindo um show" className={styles.image} /> */}
       </div>
