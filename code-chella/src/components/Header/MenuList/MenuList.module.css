@@ -13,7 +13,7 @@ body {
     background: #2e7ba2;
     height: 243px;
     padding: 1.5rem 1.5rem 0.5rem 1.5rem;
-    animation: rollUp 0.3s ease-in-out;
+    animation: rollDown 0.3s ease-in-out;
     user-select: none;
 }
 
@@ -94,7 +94,7 @@ body {
     }
 }
 
-@keyframes rollUp {
+@keyframes rollDown {
     from {
         height: 0;
         opacity: 0;
