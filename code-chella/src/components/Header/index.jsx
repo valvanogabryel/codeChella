@@ -16,8 +16,11 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <Link to='/' style={{ display: 'contents' }}>
-        <Logo className={styles.header__logo} to='/' />
-
+        <Logo
+          className={styles.header__logo}
+          style={{ zIndex: 1 }}
+          to='/'
+        />
       </Link>
       {
         isActive ?

@@ -39,7 +39,7 @@
 }
 
 .informations__image--home {
-    background-image: url("../../assets/images/programodromo.png");
+    background-image: url("../../assets/images/home/home-image-mobile.png");
     background-size: cover;
 }
 
@@ -79,7 +79,7 @@
         width: 609px;
     }
     .informations__image--home {
-        background-image: url("../../assets/images/programodromo-tablet.png");
+        background-image: url("../../assets/images/home/home-image-tablet.png");
         background-size: cover;
     }
 
