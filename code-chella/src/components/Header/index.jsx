@@ -13,6 +13,13 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   const [isActive, setMode] = useState(false);
 
+  function teste() {
+    if (isActive) {
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+
   return (
     <header className={styles.header}>
       <Link to='/' style={{ display: 'contents' }}>
@@ -40,7 +47,7 @@ const Header = () => {
           <HiMenu
             color='white'
             size={32}
-            onClick={() => setMode(!isActive)}
+            onClick={() => { setMode(!isActive); teste() }}
             className={classNames({
               [styles.header__menu]: true,
               [styles['header__menu--active']]: isActive
@@ -50,7 +57,6 @@ const Header = () => {
       <div className={styles.menu__wrapper}>
         <MenuList />
       </div>
-
     </header>
   );
 }
