@@ -32,7 +32,7 @@ const MenuList = () => {
             >
               <NavLink
                 to={item.path}
-                onClick={() => styles.teste}
+                className={styles.link}
               >{item.name}</NavLink>
             </li>
           )
