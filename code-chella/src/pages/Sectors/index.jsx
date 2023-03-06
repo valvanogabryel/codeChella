@@ -1,6 +1,7 @@
 import Banner from "components/Banner";
 import Container from "components/Container/Container";
 import InformationsSection from "components/InformationsSection";
+import { Bounce, Fade, Slide } from "react-awesome-reveal";
 import styles from './Sectors.module.css';
 
 const Sectors = () => {
@@ -42,37 +43,54 @@ const Sectors = () => {
           </div>
           <div className={styles.sectors__wrapper}>
             <p className={styles.sectors__subtitle}>Legenda:</p>
-            <ul className={styles.sectors__list}>
-              {
-                sectors.map(sector => (
-                  <div
-                    key={sector.id}
-                    className={styles.sector__item}
-                  >
-                    <span
-                      style={{ background: sector.color }}
-                      className={styles.sector__box}
-                    >{/*square*/}</span>
-                    <li>
-                      {sector.name}
-                    </li>
-                  </div>
-                ))
-              }
-            </ul>
+            <Fade
+              direction="right"
+              cascade
+              triggerOnce
+              duration={700}
+            >
+              <ul className={styles.sectors__list}>
+                {
+                  sectors.map(sector => (
+                    <div
+                      key={sector.id}
+                      className={styles.sector__item}
+                    >
+                      <span
+                        style={{ background: sector.color }}
+                        className={styles.sector__box}
+                      >{/*square*/}</span>
+                      <li>
+                        {sector.name}
+                      </li>
+                    </div>
+                  ))
+                }
+              </ul>
+            </Fade>
           </div>
         </section>
         <section>
-          <h6 className={styles.sectors__details}>Mais detalhes sobre os setores:</h6>
+          <Bounce triggerOnce>
+            <h6 className={styles.sectors__details}>Mais detalhes sobre os setores:</h6>
+          </Bounce>
+
 
           <div className={styles.sectors__informations}>
-            <InformationsSection
-              title='Pista'
-              page='sectors'
-              id={1}
+            <Slide
+              cascade
+              damping={1.2}
+              triggerOnce
+              direction="up"
             >
-              Pista convencional, atendida pelos bares e banheiros das laterais do estádio. Espaço amplo, com local para sentar e descansar. Separada da pista premium por uma grade.
-            </InformationsSection>
+              <InformationsSection
+                title='Pista'
+                page='sectors'
+                id={1}
+              >
+                Pista convencional, atendida pelos bares e banheiros das laterais do estádio. Espaço amplo, com local para sentar e descansar. Separada da pista premium por uma grade.
+              </InformationsSection>
+            </Slide>
             <InformationsSection
               title='Pista Premium'
               page='sectors'
@@ -80,13 +98,21 @@ const Sectors = () => {
             >
               Pista mais próxima do palco, com acesso muito próximo a banheiros e bares num raio de 100m. Todas as pessoas idosas e/ou com deficiência têm direito a acesso gratuito a essa área.
             </InformationsSection>
-            <InformationsSection
-              title='Cadeiras'
-              page='sectors'
-              id={3}
+            <Slide
+              cascade
+              damping={1.2}
+              triggerOnce
+              direction="up"
             >
-              Opção de cadeiras térreas ou elevadas. Acesso próximo a banheiros e bares, visão um pouco elevada em relação às pistas.
-            </InformationsSection>
+
+              <InformationsSection
+                title='Cadeiras'
+                page='sectors'
+                id={3}
+              >
+                Opção de cadeiras térreas ou elevadas. Acesso próximo a banheiros e bares, visão um pouco elevada em relação às pistas.
+              </InformationsSection>
+            </Slide>
           </div>
 
         </section>
