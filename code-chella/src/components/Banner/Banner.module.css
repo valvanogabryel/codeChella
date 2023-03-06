@@ -27,6 +27,10 @@
     background-image: url("images/informations/informations-banner-mobile.png");
 }
 
+.banner__image--ticket {
+    background-image: url("images/ticket/ticket-banner-mobile.png");
+}
+
 @media screen and (min-width: 768px) {
     .banner__image--home,
     .banner__image--experience,
@@ -49,6 +53,10 @@
 
     .banner__image--informations {
         background-image: url("images/informations/informations-banner-tablet.png");
+    }
+
+    .banner__image--ticket {
+        background-image: url("images/ticket/ticket-banner-tablet.png");
     }
 }
 
@@ -74,5 +82,9 @@
 
     .banner__image--informations {
         background-image: url("images/informations/informations-banner.png");
+    }
+
+    .banner__image--ticket {
+        background-image: url("images/ticket/ticket-banner.png");
     }
 }

@@ -15,10 +15,6 @@
     padding: 0.5rem;
 }
 
-.information__header--hasText {
-    border-radius: 16px 16px 0 0;
-}
-
 .information__title,
 .information__text {
     font-family: var(--text);
@@ -46,5 +42,16 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 40px;
-    border-radius: 0 0 16px 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .information {
+        max-width: 85%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .information {
+        max-width: 70%;
+    }
 }

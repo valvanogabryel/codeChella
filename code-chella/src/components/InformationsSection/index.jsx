@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import Button from "components/Button";
+import { Link } from "react-router-dom";
 
 
 import styles from './InformationsSection.module.css';
@@ -33,11 +34,11 @@ const InformationsSection = ({ title, children, hasButton, page, id }) => {
         </p>
         {
           hasButton ?
-
             <div className={styles.informations__button}>
-              <Button>Comprar ingresso!</Button>
+              <Link to='/ticket'>
+                <Button page='home'>Comprar ingresso!</Button>
+              </Link>
             </div>
-
             :
             <></>
         }

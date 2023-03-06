@@ -1,19 +1,25 @@
+// React
+import { Link } from "react-router-dom";
+// components
 import Banner from "components/Banner";
 import Container from "components/Container/Container";
 import Dropdown from "components/Dropdown/Dropdown";
+// styles
 import styles from './Informations.module.css';
+import Title from "components/Title/Title";
 
 const Informations = () => {
   return (
     <>
       <Banner page='informations' />
       <Container>
-        <h1 className={styles.title}>Perguntas Frequentes:</h1>
+        <Title>Perguntas Frequentes:</Title>
         <section className={styles.informations__container}>
           <Dropdown
             title='Quais serão as atrações?'
-            text='Teremos dois dias de shows, o primeiro (11/03) com bandas de rock, e o segundo (12/03) com bandas pop. Confira o line-up em detalhes clicando neste link!'
-          />
+          >
+            Teremos dois dias de shows, o primeiro (11/03) com bandas de rock, e o segundo (12/03) com bandas pop. <Link to="/" className={styles.informations__link}>Confira o line-up em detalhes clicando neste link!</Link>
+          </Dropdown>
           <Dropdown
             title='Qual é a classificação etária?'
           />

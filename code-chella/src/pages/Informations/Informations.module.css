@@ -1,9 +1,7 @@
-.title {
-    font-family: var(--text);
-    font-size: 32px;
-    font-weight: 800;
-    color: #444;
-    text-align: center;
-    line-height: 41.6px;
-    padding: 3rem;
+.informations__link {
+    text-decoration: underline;
+}
+
+.informations__link:hover {
+    opacity: 0.6;
 }
