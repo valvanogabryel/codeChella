@@ -1,0 +1,50 @@
+.information {
+    margin: 1.5rem auto;
+}
+
+.information:last-child {
+    margin: 0 auto;
+}
+
+.information__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2e7ba2;
+    color: white;
+    padding: 0.5rem;
+}
+
+.information__header--hasText {
+    border-radius: 16px 16px 0 0;
+}
+
+.information__title,
+.information__text {
+    font-family: var(--text);
+    padding: 1rem;
+}
+
+.information__title {
+    font-weight: 700;
+    font-size: 32px;
+    width: 100%;
+}
+
+.dropdown__icon {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    border-radius: 50%;
+}
+
+.dropdown__icon:hover {
+    background: #45a1cf6c;
+}
+
+.information__text {
+    background: #c8deef;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    border-radius: 0 0 16px 16px;
+}

@@ -1,13 +1,12 @@
 import Banner from "components/Banner";
+import Container from "components/Container/Container";
 import InformationsSection from "components/InformationsSection";
-
-import styles from './Experience.module.css';
 
 const Experience = () => {
   return (
     <>
       <Banner page='experience' />
-      <main className={styles.container}>
+      <Container>
         <InformationsSection
           title='Acessibilidade e Inclusão'
           page='experience'
@@ -29,7 +28,7 @@ const Experience = () => {
         >
           Intervenções artísticas e culturais para todos os gostos! Durante os intervalos dos shows, nossa experiência contará com recreação para crianças, oficina de cerâmica, origami, circo e aquarela! Além disso, nosso espaço contra com 3 praças de alimentação, roda gigante e outros brinquedos!
         </InformationsSection>
-      </main>
+      </Container>
     </>
   );
 }

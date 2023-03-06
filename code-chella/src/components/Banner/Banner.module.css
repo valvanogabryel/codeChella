@@ -2,57 +2,77 @@
     max-width: 100%;
 }
 
-.banner__image--home {
-    background-image: url("images/home/home-banner-mobile.png");
+.banner__image--home,
+.banner__image--experience,
+.banner__image--sectors,
+.banner__image--informations {
     background-size: cover;
     width: 100%;
     padding-top: 75%;
+}
+
+.banner__image--home {
+    background-image: url("images/home/home-banner-mobile.png");
 }
 
 .banner__image--experience {
     background-image: url("images/experience/experience-banner-mobile.png");
-    background-size: cover;
-    width: 100%;
-    padding-top: 75%;
 }
 
 .banner__image--sectors {
     background-image: url("images/sectors/sectors-banner-mobile.png");
-    background-size: cover;
-    width: 100%;
-    padding-top: 75%;
+}
+
+.banner__image--informations {
+    background-image: url("images/informations/informations-banner-mobile.png");
 }
 
 @media screen and (min-width: 768px) {
+    .banner__image--home,
+    .banner__image--experience,
+    .banner__image--sectors,
+    .banner__image--informations {
+        padding-top: 50%;
+    }
+
     .banner__image--home {
         background-image: url("images/home/home-banner-tablet.png");
-        padding-top: 50%;
     }
 
     .banner__image--experience {
         background-image: url("images/experience/experience-banner-tablet.png");
-        padding-top: 50%;
     }
 
     .banner__image--sectors {
         background-image: url("images/sectors/sectors-banner-tablet.png");
-        padding-top: 50%;
+    }
+
+    .banner__image--informations {
+        background-image: url("images/informations/informations-banner-tablet.png");
     }
 }
 
 @media screen and (min-width: 1440px) {
+    .banner__image--home,
+    .banner__image--experience,
+    .banner__image--sectors,
+    .banner__image--informations {
+        padding-top: 28.2634%;
+    }
+
     .banner__image--home {
         background-image: url("images/home/home-banner.png");
-        padding-top: 28.2634%;
     }
 
     .banner__image--experience {
         background-image: url("images/experience/experience-banner.png");
-        padding-top: 28.2634%;
     }
 
     .banner__image--sectors {
         background-image: url("images/sectors/sectors-banner.png");
-        padding-top: 28.2634%;
+    }
+
+    .banner__image--informations {
+        background-image: url("images/informations/informations-banner.png");
     }
 }

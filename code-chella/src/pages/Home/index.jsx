@@ -1,4 +1,5 @@
 import Banner from "components/Banner";
+import Container from "components/Container/Container";
 import InformationsSection from "components/InformationsSection";
 import styles from './Home.module.css';
 import Shows from "./Shows";
@@ -7,9 +8,7 @@ const Home = () => {
   return (
     <>
       <Banner page='home' />
-      <main className={styles.container}>
-
-
+      <Container>
         <InformationsSection
           title='< 11 e 12 de Março > Programódromo de São Paulo'
           page='home'
@@ -22,7 +21,7 @@ const Home = () => {
         <div className={styles.image}>
           {/* image */}
         </div>
-      </main>
+      </Container>
     </>
   );
 }

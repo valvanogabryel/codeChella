@@ -1,11 +1,3 @@
-.sectors__container {
-    background: linear-gradient(180deg, #bfdae6 0%, #fcf0dd 50%, #facf9d 100%);
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 .sectors__image {
     background-image: url("images/sectors-image-mobile.png");
     background-size: cover;

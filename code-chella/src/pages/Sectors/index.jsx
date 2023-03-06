@@ -1,4 +1,5 @@
 import Banner from "components/Banner";
+import Container from "components/Container/Container";
 import InformationsSection from "components/InformationsSection";
 import styles from './Sectors.module.css';
 
@@ -34,7 +35,7 @@ const Sectors = () => {
   return (
     <>
       <Banner page='sectors' />
-      <main className={styles.sectors__container}>
+      <Container>
         <section className={styles.sectors__section}>
           <div className={styles.sectors__image}>
             {/* image */}
@@ -89,7 +90,7 @@ const Sectors = () => {
           </div>
 
         </section>
-      </main>
+      </Container>
     </>
   );
 }

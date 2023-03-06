@@ -41,7 +41,8 @@ const Footer = () => {
         <div className={styles.footer__logo}>
           <BlackLogo style={{
             filter: `brightness(0.3)`
-          }} />
+          }}
+          />
         </div>
         <div className={styles.medias__container}>
           <p className={styles.medias__text}>Acesse nossas redes:</p>
