@@ -5,7 +5,9 @@
 .banner__image--home,
 .banner__image--experience,
 .banner__image--sectors,
-.banner__image--informations {
+.banner__image--informations,
+.banner__image--ticket,
+.banner__image--user {
     background-size: cover;
     width: 100%;
     padding-top: 75%;
@@ -31,11 +33,17 @@
     background-image: url("images/ticket/ticket-banner-mobile.png");
 }
 
+.banner__image--user {
+    background-image: url("images/user/user-banner-mobile.png");
+}
+
 @media screen and (min-width: 768px) {
     .banner__image--home,
     .banner__image--experience,
     .banner__image--sectors,
-    .banner__image--informations {
+    .banner__image--informations,
+    .banner__image--ticket,
+    .banner__image--user {
         padding-top: 50%;
     }
 
@@ -58,13 +66,19 @@
     .banner__image--ticket {
         background-image: url("images/ticket/ticket-banner-tablet.png");
     }
+
+    .banner__image--user {
+        background-image: url("images/user/user-banner-tablet.png");
+    }
 }
 
 @media screen and (min-width: 1440px) {
     .banner__image--home,
     .banner__image--experience,
     .banner__image--sectors,
-    .banner__image--informations {
+    .banner__image--informations,
+    .banner__image--ticket,
+    .banner__image--user {
         padding-top: 28.2634%;
     }
 
@@ -86,5 +100,9 @@
 
     .banner__image--ticket {
         background-image: url("images/ticket/ticket-banner.png");
+    }
+
+    .banner__image--user {
+        background-image: url("images/user/user-banner.png");
     }
 }
