@@ -4,12 +4,11 @@ import { ReactComponent as ArrowIcon } from 'components/Button/icons/arrow_icon.
 import styles from './Button.module.css';
 import 'animate.css';
 
-const Button = ({ children, page }) => {
+const Button = ({ children, page, type }) => {
   return (
     <button
-      type="button"
+      type={type}
       className={styles.button}
-      onMouseOver={(event) => { event.target.className = `${styles.button} animate__animated animate__bounce` }}
     >
       {children}
       {

@@ -36,7 +36,7 @@ const InformationsSection = ({ title, children, hasButton, page, id }) => {
           hasButton ?
             <div className={styles.informations__button}>
               <Link to='/ticket'>
-                <Button page='home'>Comprar ingresso!</Button>
+                <Button page='home' type='button'>Comprar ingresso!</Button>
               </Link>
             </div>
             :

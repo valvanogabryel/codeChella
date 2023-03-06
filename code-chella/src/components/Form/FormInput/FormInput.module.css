@@ -22,3 +22,16 @@
     padding: 1rem;
     color: #444;
 }
+
+@media screen and (min-width: 768px) {
+    .input__container {
+        max-width: 90%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .input__container {
+        max-width: 100%;
+    }
+}

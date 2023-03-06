@@ -113,17 +113,8 @@ body {
 
     .link--active {
         font-size: 1.3rem;
+        text-decoration: underline;
     }
-
-    /* .link {
-        transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        box-shadow: inset 0 0 0 0 #54b3d6;
-    }
-
-    .link:hover {
-        color: #2e7ba2;
-        box-shadow: inset 100px 0 0 0 #54b3d6;
-    } */
 }
 
 @keyframes rollDown {

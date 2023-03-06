@@ -1,6 +1,23 @@
+form {
+    max-width: 57%;
+    margin: auto;
+}
+
 .button__wrapper {
     width: 50%;
     margin: auto;
     height: 100px;
     padding-top: 2rem;
+}
+
+@media screen and (min-width: 1440px) {
+    .form__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .form__grid > div {
+        width: 27.3vw;
+    }
 }
