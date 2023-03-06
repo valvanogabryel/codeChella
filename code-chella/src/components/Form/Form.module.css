@@ -1,6 +1,6 @@
 .button__wrapper {
     width: 50%;
-    margin: 2rem auto 0 auto;
+    margin: auto;
     height: 100px;
-    padding: 2rem;
+    padding-top: 2rem;
 }
