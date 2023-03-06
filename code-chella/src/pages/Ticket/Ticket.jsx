@@ -5,7 +5,7 @@ import Title from "components/Title/Title";
 import { useLocation } from "react-router-dom";
 
 
-const Ticket = (props) => {
+const Ticket = () => {
   const location = useLocation();
   const { state } = location;
 
