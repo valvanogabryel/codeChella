@@ -46,7 +46,6 @@ const Footer = () => {
         <div className={styles.medias__container}>
           <p className={styles.medias__text}>Acesse nossas redes:</p>
           <JackInTheBox cascade damping={0.1}>
-
             <ul className={styles.medias__list}>
               {socialMedias.map((media) => (
                 <li
