@@ -2,8 +2,6 @@ import { ReactComponent as Logo } from 'assets/images/logo.svg';
 import qrCode from './image/qrcode.png';
 
 const TicketCard = ({ name, sector }) => {
-  console.log(name, sector);
-
   return (
     <section>
       <Logo />
