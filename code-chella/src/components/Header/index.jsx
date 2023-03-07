@@ -15,7 +15,9 @@ const Header = () => {
   const location = useLocation();
 
 
+  useEffect(() => {
 
+  });
 
   useEffect(() => {
     setMode(false);
