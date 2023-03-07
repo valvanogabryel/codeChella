@@ -4,9 +4,9 @@
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    overflow-x: hidden;
 }
 
 .container--user {
     background: #fcf0dd;
-    height: 100%;
 }
