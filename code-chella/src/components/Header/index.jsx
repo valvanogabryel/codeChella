@@ -1,25 +1,25 @@
 import { ReactComponent as Logo } from 'assets/images/logo.svg';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   HiMenu,
   HiMenuAlt2
 } from 'react-icons/hi';
 import MenuList from './MenuList';
 import classNames from 'classnames';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import styles from './Header.module.css';
 
 const Header = () => {
   const [isActive, setMode] = useState(false);
+  const location = useLocation();
 
-  function preventScrolling() {
-    if (isActive) {
-      document.body.style.overflow = 'scroll';
-    } else {
-      document.body.style.overflow = 'hidden';
-    }
-  }
+
+
+
+  useEffect(() => {
+    setMode(false);
+  }, [location]);
 
   return (
     <header className={styles.header}>
@@ -38,7 +38,6 @@ const Header = () => {
               size={32}
               onClick={() => {
                 setMode(!isActive);
-                preventScrolling();
               }}
               className={classNames({
                 [styles.header__menu]: true,
@@ -53,7 +52,6 @@ const Header = () => {
             size={32}
             onClick={() => {
               setMode(!isActive);
-              preventScrolling();
             }}
             className={classNames({
               [styles.header__menu]: true,
