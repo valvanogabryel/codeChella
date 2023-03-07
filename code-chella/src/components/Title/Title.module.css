@@ -7,6 +7,11 @@
     padding: 3rem 2rem 1.5rem 2rem;
 }
 
+.title--raleway {
+    font-family: var(--text) !important;
+    font-weight: 700;
+}
+
 @media screen and (min-width: 768px) {
     .title {
         font-size: 48px;

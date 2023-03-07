@@ -17,7 +17,7 @@ const Ticket = () => {
     <>
       <Banner page='user' />
       <Container>
-        <Title>Uhul, agora sim! Seu ingresso está aqui, apresente na entrada do evento e divirta-se!</Title>
+        <Title font='raleway'>Uhul, agora sim! Seu ingresso está aqui, apresente na entrada do evento e divirta-se!</Title>
         <TicketCard name={fullName} sector={ticketType} />
       </Container>
     </>

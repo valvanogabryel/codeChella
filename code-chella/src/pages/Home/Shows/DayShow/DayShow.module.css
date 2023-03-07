@@ -147,6 +147,7 @@
         flex-wrap: wrap;
         width: 65%;
         margin: auto;
+        gap: 0.5rem;
     }
 
     .show__band--1 {

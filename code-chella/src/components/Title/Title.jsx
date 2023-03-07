@@ -1,10 +1,14 @@
+import classNames from 'classnames';
 import { JackInTheBox } from 'react-awesome-reveal';
 import styles from './Title.module.css';
 
-const Title = ({ children }) => {
+const Title = ({ children, font = 'typography' }) => {
     return (
         <JackInTheBox triggerOnce>
-            <h1 className={styles.title}>{children}</h1>
+            <h1 className={classNames({
+                [styles.title]: true,
+                [styles[`title--${font}`]]: true
+            })}>{children}</h1>
         </JackInTheBox>
     );
 }
