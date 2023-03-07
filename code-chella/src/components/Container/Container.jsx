@@ -1,8 +1,12 @@
+import classNames from 'classnames';
 import styles from './Container.module.css';
 
-const Container = ({ children }) => {
+const Container = ({ children, page }) => {
     return (
-        <main className={styles.container}>
+        <main className={classNames({
+            [styles.container]: true,
+            [styles[`container--${page}`]]: true
+        })}>
             {children}
         </main>
     );

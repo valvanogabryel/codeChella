@@ -5,3 +5,20 @@
     margin-right: auto;
     margin-left: auto;
 }
+
+.container--user {
+    background: #fcf0dd;
+    height: 125vh;
+}
+
+@media screen and (min-width: 768px) {
+    .container--user {
+        height: 105vh;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container--user {
+        height: 77vh;
+    }
+}

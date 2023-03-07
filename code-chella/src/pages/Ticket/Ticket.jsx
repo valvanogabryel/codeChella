@@ -13,10 +13,12 @@ const Ticket = () => {
     ticketType,
   } = state;
 
+  const page = 'user';
+
   return (
     <>
-      <Banner page='user' />
-      <Container>
+      <Banner page={page} />
+      <Container page={page}>
         <Title font='raleway'>Uhul, agora sim! Seu ingresso está aqui, apresente na entrada do evento e divirta-se!</Title>
         <TicketCard name={fullName} sector={ticketType} />
       </Container>

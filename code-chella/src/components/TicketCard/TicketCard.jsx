@@ -20,22 +20,24 @@ const TicketCard = ({ name, sector }) => {
           style={{
             filter: `brightness(5)`,
             transform: 'scale(0.3)',
-            width: '50%'
+            width: 'auto'
           }}
         />
       </div>
-      <div className={styles.card__qrcode}>
-        <img
-          src={qrCode}
-          alt="QR CODE"
-        />
-      </div>
-      <div className={styles.card__info}>
-        <h2 className={styles.card__username}>{name}</h2>
-        <p className={styles.card__text}>Ingresso: Cortesia</p>
-        <p className={styles.card__text}>Setor: {sector}</p>
-        <p className={styles.card__text}>Data: 11/03</p>
-        <p className={styles.card__text}>Local: Rio de Janeiro - RJ</p>
+      <div className={styles.teste}>
+        <div className={styles.card__qrcode}>
+          <img
+            src={qrCode}
+            alt="QR CODE"
+          />
+        </div>
+        <div className={styles.card__info}>
+          <h2 className={styles.card__username}>{name}</h2>
+          <p className={styles.card__text}>Ingresso: Cortesia</p>
+          <p className={styles.card__text}>Setor: {sector}</p>
+          <p className={styles.card__text}>Data: 11/03</p>
+          <p className={styles.card__text}>Local: Rio de Janeiro - RJ</p>
+        </div>
       </div>
     </section >
   );
