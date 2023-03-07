@@ -24,7 +24,7 @@ const TicketCard = ({ name, sector }) => {
           }}
         />
       </div>
-      <div className={styles.teste}>
+      <div className={styles.card__wrapper}>
         <div className={styles.card__qrcode}>
           <img
             src={qrCode}

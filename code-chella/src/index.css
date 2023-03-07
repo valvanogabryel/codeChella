@@ -3,11 +3,9 @@
   --text: "Raleway", sans-serif;
 }
 
-/*! check 
-*  
-{
+/* * {
   outline: 1px solid red;
- } */
+} */
 
 html,
 body {
@@ -19,7 +17,7 @@ body {
   font-family: var(--text);
   padding: 0;
   height: 100%;
-  width: 100vw !important;
+  width: 100% !important;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
