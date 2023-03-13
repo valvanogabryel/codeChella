@@ -1,7 +1,6 @@
 import { Fade } from "react-awesome-reveal";
 import styles from './InvalidMessages.module.css';
 
-
 const InvalidMessages = ({ isNotValid, isValidDate }) => {
   return (
     <Fade cascade>

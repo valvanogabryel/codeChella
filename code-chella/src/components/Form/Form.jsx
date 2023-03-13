@@ -5,6 +5,8 @@ import Button from "components/Button";
 import FormInput from "./FormInput/FormInput";
 
 import styles from './Form.module.css';
+import validate from "utils/validate";
+import InvalidMessages from "components/InvalidMessages";
 
 const Form = () => {
   const [fullName, setFullName] = useState('');
@@ -42,6 +44,8 @@ const Form = () => {
     navigate(`/user/`, { state: formValues });
   };
 
+  const isValid = validate(formValues);
+
   return (
     <section className={styles.form__container}>
       <form onSubmit={handleFormSubmit}>
@@ -69,9 +73,20 @@ const Form = () => {
         <div className={styles.button__wrapper}>
           <Button
             type='submit'
-            formFields={formValues}
-          >Avançar!</Button>
+            isValid={isValid}
+          >
+            Avançar!
+          </Button>
         </div>
+        {
+          isValid.isNotValid || !isValid.isDateValid ?
+            <InvalidMessages
+              isNotValid={isValid.isNotValid}
+              isValidDate={isValid.isDateValid}
+            />
+            :
+            <></>
+        }
       </form>
     </section >
   );
