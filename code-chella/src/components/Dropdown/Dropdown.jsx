@@ -1,5 +1,6 @@
 // React
 import { useState } from 'react';
+// React (Icons)
 import { RiArrowDropDownFill as DropDownIcon } from 'react-icons/ri';
 import { RiArrowDropUpFill as LiftUpIcon } from 'react-icons/ri';
 // Styles
