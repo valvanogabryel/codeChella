@@ -28,7 +28,7 @@ const Button = ({ children, type, formFields }) => {
 
       if (!dateNum && dateNum !== 0) return false;
 
-      if (date.getFullYear() < 1900) return false;
+      if (date.getFullYear() < 1900 || date.getFullYear() > 2018) return false;
 
       return date.toISOString().slice(0, 10) === birthDate;
     }
@@ -58,9 +58,7 @@ const Button = ({ children, type, formFields }) => {
     <>
       <button
         type={type}
-        className={classNames({
-          [styles.button]: true,
-        })}
+        className={styles.button}
       >
         {children}
         <TicketIcon />

@@ -1,9 +1,10 @@
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import Button from "components/Button";
 import FormInput from "./FormInput/FormInput";
 
 import styles from './Form.module.css';
-import { useNavigate } from "react-router-dom";
-import { useState } from "react";
 
 const Form = () => {
   const [fullName, setFullName] = useState('');
