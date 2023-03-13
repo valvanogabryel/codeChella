@@ -1,10 +1,12 @@
+// React
 import { ReactComponent as TicketIcon } from 'components/Button/icons/ticket_icon.svg';
 import { ReactComponent as ArrowIcon } from 'components/Button/icons/arrow_icon.svg';
-
-import styles from './Button.module.css';
-import 'animate.css';
+// Components
+import InvalidMessages from 'components/InvalidMessages';
+// Utils
 import classNames from 'classnames';
-import { Fade } from 'react-awesome-reveal';
+// Styles
+import styles from './Button.module.css';
 
 const Button = ({ children, type, formFields }) => {
   if (type === 'submit') {
@@ -14,9 +16,7 @@ const Button = ({ children, type, formFields }) => {
       birthDate
     } = formFields;
 
-    const isNotValid =
-      fullName.length < 8 ||
-      email.length < 10
+    const isNotValid = fullName.length < 8 || email.length < 10;
 
     const isValidDate = (birthDate) => {
       let regEx = /^\d{4}-\d{2}-\d{2}$/;
@@ -45,20 +45,11 @@ const Button = ({ children, type, formFields }) => {
         >
           {children}
           <ArrowIcon />
-
         </button>
-        <Fade cascade>
-          <div className={styles.error__container}>
-            {
-              isNotValid &&
-              <span className={styles.error__text}>- Preencha os dados corretamente -</span>
-            }
-            {
-              !isValidDate(birthDate) &&
-              <span className={styles.error__text}>- Insira uma data válida -</span>
-            }
-          </div>
-        </Fade>
+        <InvalidMessages
+          isNotValid={isNotValid}
+          isValidDate={isValidDate(birthDate)}
+        />
       </>
     );
   }
