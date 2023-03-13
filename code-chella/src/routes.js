@@ -14,24 +14,8 @@ import Sectors from 'pages/Sectors';
 import Informations from 'pages/Informations/Informations';
 import TicketPurchase from 'pages/TicketPurchase/TicketPurchase';
 import Ticket from 'pages/Ticket/Ticket';
-// Utils
-// import ScrollToTop from 'utils/ScrollToTop';
 
 const AppRoutes = () => {
-  // const { pathname } = useLocation();
-
-  // useEffect(() => {
-  //   function scrollToTop() {
-  //     window.scrollTo(0, 0);
-  //     console.log('oi')
-  //   }
-
-  //   setTimeout(
-  //     scrollToTop(),
-  //     0
-  //   )
-  // }, [pathname]);
-
   return (
     <Routes>
       <Route path='/' element={<BasePage />}>

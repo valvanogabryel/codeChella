@@ -1,5 +1,6 @@
 .information {
     margin: 1.5rem auto;
+    user-select: none;
 }
 
 .information:last-child {
@@ -37,11 +38,25 @@
     background: #45a1cf6c;
 }
 
+.information__textWrapper {
+    overflow: hidden;
+    max-height: 0;
+}
+
+.information__textWrapper:has(> p) {
+    max-height: 1000px;
+    transition: max-height 1s ease-in;
+}
+
 .information__text {
     background: #c8deef;
     font-size: 20px;
     font-weight: 500;
     line-height: 40px;
+}
+
+.information__text--active {
+    display: block;
 }
 
 @media screen and (min-width: 768px) {

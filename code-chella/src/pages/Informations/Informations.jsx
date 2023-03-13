@@ -22,16 +22,34 @@ const Informations = () => {
           </Dropdown>
           <Dropdown
             title='Qual é a classificação etária?'
-          />
+
+          >
+            A partir de 16 anos, todo mundo pode entrar. De 13 a 15 anos, tem que estar acompanhado dos pais ou responsáveis legais. Menores de 10 anos não podem entrar.
+          </Dropdown>
           <Dropdown
             title='Quais são os setores disponíveis?'
-          />
+          >
+            Pista Comum
+            <br />
+            Pista Premium
+            <br />
+            Cadeiras Térreo
+            <br />
+            Cadeiras Superiores
+            <br />
+            <br />
+            Para mais informações, confira a <Link to='/sectors' className={styles.informations__link}>página de setores</Link>
+          </Dropdown>
           <Dropdown
             title='Quais são os itens proibidos?'
-          />
+          >
+            Garrafas, latas, bebidas, utensílios de armazenagem, embalagens rígidas com tampa, capacetes, cadeiras ou bancos, armas de fogo e armas brancas, objetos pontiagudos, cortantes e/ou perfurantes, correntes e cinturões, fogos de artifício, objetos de vidro, substâncias inflamáveis, cigarro eletrônico, corrosivas e ou tóxicas, revistas, jornais, livros e copo térmico ou similares.
+          </Dropdown>
           <Dropdown
-            title='Quais são os itens proibidos?'
-          />
+            title='Quem tem direito a meia-entrada?'
+          >
+            De acordo com a Lei Federal, têm direito ao benefício da meia-entrada aqueles que preencherem os requisitos e apresentarem os documentos que comprovem.
+          </Dropdown>
         </section>
       </Container>
     </>
