@@ -41,9 +41,6 @@ const Form = () => {
     navigate(`/user/`, { state: formValues });
   };
 
-
-
-
   return (
     <section className={styles.form__container}>
       <form onSubmit={handleFormSubmit}>
@@ -69,7 +66,10 @@ const Form = () => {
           />
         </div>
         <div className={styles.button__wrapper}>
-          <Button type='submit'>Avançar!</Button>
+          <Button
+            type='submit'
+            formFields={formValues}
+          >Avançar!</Button>
         </div>
       </form>
     </section >

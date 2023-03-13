@@ -22,6 +22,31 @@
     background: #519ec5;
 }
 
+.button--disabled {
+    opacity: 0.9;
+}
+
+.error__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin: 2rem auto;
+    position: absolute;
+}
+
+.error__text {
+    color: #df5151;
+    user-select: none;
+    position: relative;
+    right: 15%;
+}
+
+.button--disabled:hover {
+    background: #2e7ba2;
+}
+
 @media screen and (min-width: 768px) {
     .button {
         width: auto;
