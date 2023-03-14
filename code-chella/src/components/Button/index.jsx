@@ -15,7 +15,6 @@ const Button = ({ children, type, isValid }) => {
   const isSubmit = () => {
     return type === 'submit';
   }
-
   return (
     isSubmit() ?
       <button

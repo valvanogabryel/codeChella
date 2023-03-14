@@ -1,9 +1,8 @@
+
 // React
-// React
-// import { useEffect } from 'react';
 import {
-  Route, Routes,
-  //  useLocation 
+  Route,
+  Routes
 } from 'react-router-dom';
 // Base
 import BasePage from 'components/BasePage';
@@ -11,9 +10,9 @@ import BasePage from 'components/BasePage';
 import Home from './pages/Home';
 import Experience from 'pages/Experience';
 import Sectors from 'pages/Sectors';
-import Informations from 'pages/Informations/Informations';
-import TicketPurchase from 'pages/TicketPurchase/TicketPurchase';
-import Ticket from 'pages/Ticket/Ticket';
+import Informations from 'pages/Informations';
+import TicketPurchase from 'pages/TicketPurchase';
+import Ticket from 'pages/Ticket';
 
 const AppRoutes = () => {
   return (

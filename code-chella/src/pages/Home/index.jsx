@@ -5,7 +5,6 @@ import styles from './Home.module.css';
 import Shows from "./Shows";
 
 const Home = () => {
-
   return (
     <>
       <Banner page='home' />
