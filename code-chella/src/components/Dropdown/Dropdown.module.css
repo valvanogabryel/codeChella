@@ -31,11 +31,6 @@
 .dropdown__icon {
     cursor: pointer;
     transition: 0.3s ease-in-out;
-    border-radius: 50%;
-}
-
-.dropdown__icon:hover {
-    background: #45a1cf6c;
 }
 
 .information__textWrapper {
@@ -63,10 +58,25 @@
     .information {
         max-width: 85%;
     }
+
+    .dropdown__icon {
+        border-radius: 100%;
+    }
+
+    .dropdown__icon:hover {
+        background: #2e7ba2;
+    }
 }
 
 @media screen and (min-width: 1440px) {
     .information {
         max-width: 70%;
+    }
+
+    .dropdown__icon {
+        border-radius: 50%;
+    }
+    .dropdown__icon:hover {
+        background: #45a1cf6c;
     }
 }
